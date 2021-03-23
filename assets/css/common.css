@@ -1,0 +1,86 @@
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/NotoSansKR-Regular.eot");
+  src: url("../font/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), url("../font/NotoSansKR-Regular.woff2") format("woff2"), url("../font/NotoSansKR-Regular.woff") format("woff"), url("../font/NotoSansKR-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: Cinzel;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Cinzel-Regular.eot");
+  src: url("../font/Cinzel-Regular.eot#iefix") format("embedded-opentype"), url("../font/Cinzel-Regular.woff2") format("woff2"), url("../font/Cinzel-Regular.woff") format("woff"), url("../font/Cinzel-Regular.ttf") format("truetype"); }
+body, h1, h2, h3, h4, h5, p, ul, button, form {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+img, figure, video {
+  max-width: 100%; }
+
+address {
+  font-style: normal; }
+
+header, nav, section, aside, footer {
+  display: block; }
+
+.blind-b {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  border: none;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); }
+
+#skip a {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 10001; }
+  #skip a:focus {
+    left: 0;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #ffffff; }
+
+body {
+  font-family: NtSansKR, Cinzel;
+  font-size: 1.0417vw;
+  color: #000000;
+  line-height: 1;
+  font-weight: 400; }
+  body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=common.css.map */

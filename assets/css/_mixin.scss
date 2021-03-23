@@ -1,0 +1,22 @@
+@mixin bgsize($value) {
+    -webkit-background-size: $value !important;
+    -moz-background-size: $value !important;
+    background-size: $value !important;
+  }
+  @mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -o-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+  }
+  @mixin transition($value...) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+  }
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }

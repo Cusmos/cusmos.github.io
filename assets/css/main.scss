@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+#cnt_wrap{overflow-x: hidden;overflow-y: hidden;}
+#cnt_wrap>section{background: #fff;}
+#cnt1{
+    width: 100%; height: 100vh;overflow: hidden;
+    .main_first{
+        width: 100%; height: 100%; text-align: center; 
+        @include bgsize(cover);background: no-repeat center; background-image: url("../images/main/main_bg.png");
+        >img{display: inline-block; width: 1000px; margin-top: 400px;}
+        span{
+            img{width: 50px;height: 80px; position: absolute; bottom: 30px; left: calc(50% - 25px);}
+        }
+    }
+}
+#cnt2{
+    h2{font-family: Cinzel; color: $dark_wine; font-size: 40px; margin-top: 100px; text-align: center; position: relative;
+    &::before{content: ""; width: 50px; height: 50px; background: $beige; position: absolute; bottom: 50px; right: 700px; border-radius: 50%;}
+    &::after{content: ""; width: 27px; height: 27px; background: $pink ; position: absolute; top: 0; right: 650px; border-radius: 50%;}
+    }
+    .service_list{
+        margin-top: 100px;
+        ul{width: 1840px; height: 400px; border-radius: 85px;
+        padding: 100px 240px; margin-left: 30px;
+        .service_title{font-family: Cinzel; font-size: 25px;position: relative; display: inline-block; 
+        &::after{content: ""; position: absolute; top: 100px; left: 0; background: #000; width: 1050px; height: 1px;}}
+        .service_go{display: inline-block; width: 110px; height: 40px; font-size: 15px; margin-left: 30px;
+        a{width: 110px; height: 40px; display: inline-block;background-color: #fff;border-radius: 20px; line-height: 40px; text-align: center;}}
+        .service_txt{font-size: 16px; margin-top: 130px;line-height: 1.5;}
+        .service_img{
+            position: relative;
+            img{border-radius: 50%;position: absolute; bottom: -25px; right: 60px;}
+            &::before{content: ""; width: 250px; height: 250px; position: absolute; bottom: 0; border-radius: 50%;}}
+        +ul{margin-top: 100px;}
+        }
+        .service_1{background-color: rgba(248, 234, 225, 0.5);
+        .service_img{&::before{right: -25px; background:#f8eae1;}}}
+        .service_2{background-color: rgba(207, 164, 145, 0.5);
+        .service_img{&::before{right: 100px; background:#cfa491;}}
+        }
+        .service_3{background-color: rgba(193, 166, 145, 0.5);
+        .service_img{&::before{right: -25px; background:#c1a691;}}}
+    }
+}
+#cnt3{
+    text-align: center; position: relative;
+    .bg_logo{
+        img{width: 1000px; height: 1000px; position: absolute; top: 0; left: 0; z-index: -1;}
+    }
+    .bg_tec{font-family: Cinzel; font-size: 200px; color: rgba(193, 166, 145, 0.15); position: absolute; top: 0; right: 0;}
+    p{margin-top: 50px;}
+}
+#cnt4{}

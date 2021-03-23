@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+#wrap{min-width: 20rem;}
+// 헤더공통
+.header{
+    position: relative;width: 100%; z-index: 10000;
+}
+//pc헤더
+#pcHeader{display: block; position: fixed; top: 0; left: 0; font-size: 15px; background: #fff; height: 80px; color: $grey; padding: 0 300px;
+    .logo{
+        float: left;
+        a{display: block; width: 200px; height: 40px;margin-top: 15px; line-height: 80px;     
+        }
+    }
+    .dep1{
+        float: right;
+        >li{float: left; line-height: 80px;
+        +li{margin-left: 80px;}
+        }
+    }
+    .dep2{display: none;}
+}
+#mHeader{
+    display: none;}
+//m헤더
+@media screen and (max-width: 1439px) {
+    #pcHeader{display: none;}
+    #mHeader{
+        display: block;position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; }
+}
+// 푸터
+footer{background: #c99789; color: #fff; padding: 0 300px; font-size: 15px; height: 150px;
+ul{
+    li{display: inline-block;}
+}}
