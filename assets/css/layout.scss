@@ -29,7 +29,12 @@
         display: block;position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; }
 }
 // 푸터
-footer{background: #c99789; color: #fff; padding: 0 300px; font-size: 15px; height: 150px;
-ul{
-    li{display: inline-block;}
-}}
+footer{background: #c99789; color: #fff; padding: 0 280px; font-size: 15px; width: 100vw; height: 150px; float: left;
+margin-top: 80px;
+    img{width: 180px; height: 30px; margin-top: 60px;}
+    p{display: inline-block; line-height: 150px; margin-left: 55px;}
+    ul{display: inline-block; margin-left: 400px;
+        li{display: inline-block;
+        +li{margin-left: 70px;}}
+    }
+}
