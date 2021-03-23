@@ -2,9 +2,6 @@
   overflow-x: hidden;
   overflow-y: hidden; }
 
-#cnt_wrap > section {
-  background: #fff; }
-
 #cnt1 {
   width: 100%;
   height: 100vh;
@@ -30,7 +27,7 @@
       left: calc(50% - 25px); }
 
 #cnt2 {
-  margin-top: 120px; }
+  margin-top: 200px; }
   #cnt2 h2 {
     font-family: Cinzel;
     color: #482428;
@@ -73,7 +70,6 @@
           content: "";
           position: absolute;
           top: 100px;
-          left: 0;
           background: #000;
           width: 1050px;
           height: 1px; }
@@ -113,16 +109,25 @@
         margin-top: 100px; }
     #cnt2 .service_list .service_1 {
       background-color: rgba(248, 234, 225, 0.5); }
+      #cnt2 .service_list .service_1 .service_title::after {
+        left: 0; }
       #cnt2 .service_list .service_1 .service_img::before {
         right: -25px;
         background: #f8eae1; }
     #cnt2 .service_list .service_2 {
-      background-color: rgba(207, 164, 145, 0.5); }
+      background-color: rgba(207, 164, 145, 0.5);
+      text-align: right; }
+      #cnt2 .service_list .service_2 .service_title::after {
+        right: -150px; }
+      #cnt2 .service_list .service_2 .service_img img {
+        left: 60px; }
       #cnt2 .service_list .service_2 .service_img::before {
-        right: 100px;
+        left: 10px;
         background: #cfa491; }
     #cnt2 .service_list .service_3 {
       background-color: rgba(193, 166, 145, 0.5); }
+      #cnt2 .service_list .service_3 .service_title::after {
+        left: 0; }
       #cnt2 .service_list .service_3 .service_img::before {
         right: -25px;
         background: #c1a691; }
@@ -130,7 +135,7 @@
 #cnt3 {
   text-align: center;
   position: relative;
-  margin-top: 100px; }
+  margin-top: 150px; }
   #cnt3 .tec_logo img {
     width: 300px;
     height: 50px;
@@ -140,7 +145,8 @@
     height: 800px;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: -1; }
   #cnt3 .bg_tec {
     font-family: Cinzel;
     font-size: 170px;
@@ -162,5 +168,50 @@
         margin-top: 45px; }
       #cnt3 .tec_list li + li {
         margin-left: 113px; }
+
+#cnt4 {
+  width: 100vw;
+  background: #FCE9DB;
+  margin-top: 200px;
+  padding: 0 10%; }
+  #cnt4 .contact_left {
+    display: inline-block;
+    width: 520px; }
+    #cnt4 .contact_left h2 {
+      font-family: Cinzel;
+      font-size: 50px;
+      padding-top: 180px;
+      padding-bottom: 120px;
+      color: #482428; }
+    #cnt4 .contact_left ul {
+      color: #5E5E5E; }
+      #cnt4 .contact_left ul li + li {
+        margin-top: 30px; }
+    #cnt4 .contact_left a {
+      display: block;
+      margin-top: 120px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      width: 385px;
+      height: 70px;
+      line-height: 70px;
+      background: #fff;
+      padding: 0 50px;
+      position: relative; }
+      #cnt4 .contact_left a img {
+        width: 8px;
+        height: 15px;
+        position: absolute;
+        top: 28px;
+        right: 35px; }
+      #cnt4 .contact_left a:hover, #cnt4 .contact_left a:focus {
+        background: #FCE9DB;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+  #cnt4 img {
+    width: 980px;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
