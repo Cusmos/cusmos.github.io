@@ -51,10 +51,26 @@
 footer {
   background: #c99789;
   color: #fff;
-  padding: 0 300px;
+  padding: 0 280px;
   font-size: 15px;
-  height: 150px; }
-  footer ul li {
-    display: inline-block; }
+  width: 100vw;
+  height: 150px;
+  float: left;
+  margin-top: 80px; }
+  footer img {
+    width: 180px;
+    height: 30px;
+    margin-top: 60px; }
+  footer p {
+    display: inline-block;
+    line-height: 150px;
+    margin-left: 55px; }
+  footer ul {
+    display: inline-block;
+    margin-left: 400px; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li + li {
+        margin-left: 70px; }
 
 /*# sourceMappingURL=layout.css.map */
