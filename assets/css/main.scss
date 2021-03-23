@@ -14,6 +14,7 @@
     }
 }
 #cnt2{
+    margin-top: 120px;
     h2{font-family: Cinzel; color: $dark_wine; font-size: 40px; margin-top: 100px; text-align: center; position: relative;
     &::before{content: ""; width: 50px; height: 50px; background: $beige; position: absolute; bottom: 50px; right: 700px; border-radius: 50%;}
     &::after{content: ""; width: 27px; height: 27px; background: $pink ; position: absolute; top: 0; right: 650px; border-radius: 50%;}
@@ -43,11 +44,19 @@
     }
 }
 #cnt3{
-    text-align: center; position: relative;
+    text-align: center; position: relative; margin-top: 100px;
+    .tec_logo{img{width: 300px;height: 50px;margin-top: 200px;}}
     .bg_logo{
-        img{width: 1000px; height: 1000px; position: absolute; top: 0; left: 0; z-index: -1;}
+        img{width: 800px; height: 800px; position: absolute; top: 0; left: 0;}
     }
-    .bg_tec{font-family: Cinzel; font-size: 200px; color: rgba(193, 166, 145, 0.15); position: absolute; top: 0; right: 0;}
-    p{margin-top: 50px;}
+    .bg_tec{font-family: Cinzel; font-size: 170px; color: rgba(193, 166, 145, 0.15); position: absolute; top: 645px; right: 0;}
+    >p{margin-top: 150px; line-height: 50px;}
+    .tec_list{ margin-top: 300px; display: inline-block;
+        li{float: left; width: 300px;
+            img{}
+            p{color: $dark_wine; margin-top: 45px;}
+            +li{margin-left: 113px;}
+        }
+    }
 }
 #cnt4{}

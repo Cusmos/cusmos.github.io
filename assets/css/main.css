@@ -29,120 +29,138 @@
       bottom: 30px;
       left: calc(50% - 25px); }
 
-#cnt2 h2 {
-  font-family: Cinzel;
-  color: #482428;
-  font-size: 40px;
-  margin-top: 100px;
-  text-align: center;
-  position: relative; }
-  #cnt2 h2::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background: #FCE9DB;
-    position: absolute;
-    bottom: 50px;
-    right: 700px;
-    border-radius: 50%; }
-  #cnt2 h2::after {
-    content: "";
-    width: 27px;
-    height: 27px;
-    background: #C99789;
-    position: absolute;
-    top: 0;
-    right: 650px;
-    border-radius: 50%; }
-#cnt2 .service_list {
-  margin-top: 100px; }
-  #cnt2 .service_list ul {
-    width: 1840px;
-    height: 400px;
-    border-radius: 85px;
-    padding: 100px 240px;
-    margin-left: 30px; }
-    #cnt2 .service_list ul .service_title {
-      font-family: Cinzel;
-      font-size: 25px;
-      position: relative;
-      display: inline-block; }
-      #cnt2 .service_list ul .service_title::after {
-        content: "";
-        position: absolute;
-        top: 100px;
-        left: 0;
-        background: #000;
-        width: 1050px;
-        height: 1px; }
-    #cnt2 .service_list ul .service_go {
-      display: inline-block;
-      width: 110px;
-      height: 40px;
-      font-size: 15px;
+#cnt2 {
+  margin-top: 120px; }
+  #cnt2 h2 {
+    font-family: Cinzel;
+    color: #482428;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative; }
+    #cnt2 h2::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: #FCE9DB;
+      position: absolute;
+      bottom: 50px;
+      right: 700px;
+      border-radius: 50%; }
+    #cnt2 h2::after {
+      content: "";
+      width: 27px;
+      height: 27px;
+      background: #C99789;
+      position: absolute;
+      top: 0;
+      right: 650px;
+      border-radius: 50%; }
+  #cnt2 .service_list {
+    margin-top: 100px; }
+    #cnt2 .service_list ul {
+      width: 1840px;
+      height: 400px;
+      border-radius: 85px;
+      padding: 100px 240px;
       margin-left: 30px; }
-      #cnt2 .service_list ul .service_go a {
+      #cnt2 .service_list ul .service_title {
+        font-family: Cinzel;
+        font-size: 25px;
+        position: relative;
+        display: inline-block; }
+        #cnt2 .service_list ul .service_title::after {
+          content: "";
+          position: absolute;
+          top: 100px;
+          left: 0;
+          background: #000;
+          width: 1050px;
+          height: 1px; }
+      #cnt2 .service_list ul .service_go {
+        display: inline-block;
         width: 110px;
         height: 40px;
-        display: inline-block;
-        background-color: #fff;
-        border-radius: 20px;
-        line-height: 40px;
-        text-align: center; }
-    #cnt2 .service_list ul .service_txt {
-      font-size: 16px;
-      margin-top: 130px;
-      line-height: 1.5; }
-    #cnt2 .service_list ul .service_img {
-      position: relative; }
-      #cnt2 .service_list ul .service_img img {
-        border-radius: 50%;
-        position: absolute;
-        bottom: -25px;
-        right: 60px; }
-      #cnt2 .service_list ul .service_img::before {
-        content: "";
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        bottom: 0;
-        border-radius: 50%; }
-    #cnt2 .service_list ul + ul {
-      margin-top: 100px; }
-  #cnt2 .service_list .service_1 {
-    background-color: rgba(248, 234, 225, 0.5); }
-    #cnt2 .service_list .service_1 .service_img::before {
-      right: -25px;
-      background: #f8eae1; }
-  #cnt2 .service_list .service_2 {
-    background-color: rgba(207, 164, 145, 0.5); }
-    #cnt2 .service_list .service_2 .service_img::before {
-      right: 100px;
-      background: #cfa491; }
-  #cnt2 .service_list .service_3 {
-    background-color: rgba(193, 166, 145, 0.5); }
-    #cnt2 .service_list .service_3 .service_img::before {
-      right: -25px;
-      background: #c1a691; }
+        font-size: 15px;
+        margin-left: 30px; }
+        #cnt2 .service_list ul .service_go a {
+          width: 110px;
+          height: 40px;
+          display: inline-block;
+          background-color: #fff;
+          border-radius: 20px;
+          line-height: 40px;
+          text-align: center; }
+      #cnt2 .service_list ul .service_txt {
+        font-size: 16px;
+        margin-top: 130px;
+        line-height: 1.5; }
+      #cnt2 .service_list ul .service_img {
+        position: relative; }
+        #cnt2 .service_list ul .service_img img {
+          border-radius: 50%;
+          position: absolute;
+          bottom: -25px;
+          right: 60px; }
+        #cnt2 .service_list ul .service_img::before {
+          content: "";
+          width: 250px;
+          height: 250px;
+          position: absolute;
+          bottom: 0;
+          border-radius: 50%; }
+      #cnt2 .service_list ul + ul {
+        margin-top: 100px; }
+    #cnt2 .service_list .service_1 {
+      background-color: rgba(248, 234, 225, 0.5); }
+      #cnt2 .service_list .service_1 .service_img::before {
+        right: -25px;
+        background: #f8eae1; }
+    #cnt2 .service_list .service_2 {
+      background-color: rgba(207, 164, 145, 0.5); }
+      #cnt2 .service_list .service_2 .service_img::before {
+        right: 100px;
+        background: #cfa491; }
+    #cnt2 .service_list .service_3 {
+      background-color: rgba(193, 166, 145, 0.5); }
+      #cnt2 .service_list .service_3 .service_img::before {
+        right: -25px;
+        background: #c1a691; }
 
 #cnt3 {
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin-top: 100px; }
+  #cnt3 .tec_logo img {
+    width: 300px;
+    height: 50px;
+    margin-top: 200px; }
   #cnt3 .bg_logo img {
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: -1; }
+    left: 0; }
   #cnt3 .bg_tec {
     font-family: Cinzel;
-    font-size: 200px;
+    font-size: 170px;
     color: rgba(193, 166, 145, 0.15);
     position: absolute;
-    top: 0;
+    top: 645px;
     right: 0; }
-  #cnt3 p {
-    margin-top: 50px; }
+  #cnt3 > p {
+    margin-top: 150px;
+    line-height: 50px; }
+  #cnt3 .tec_list {
+    margin-top: 300px;
+    display: inline-block; }
+    #cnt3 .tec_list li {
+      float: left;
+      width: 300px; }
+      #cnt3 .tec_list li p {
+        color: #482428;
+        margin-top: 45px; }
+      #cnt3 .tec_list li + li {
+        margin-left: 113px; }
 
 /*# sourceMappingURL=main.css.map */
