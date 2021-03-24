@@ -2,34 +2,98 @@
 @import "_var", "_mixin";
 #wrap{min-width: 20rem;}
 // 헤더공통
-.header{
-    position: relative;width: 100%; z-index: 10000;
-}
+.header{position: relative;width: 100%; z-index: 10000;}
 //pc헤더
-#pcHeader{display: block; position: fixed; top: 0; left: 0; font-size: 15px; background: #fff; height: 80px; color: $grey; padding: 0 300px;
+#pcHeader{display: block; position: fixed; top: 0; left: 0; font-size: 15px; background: #fff; height: 80px; color: $grey;
     .logo{
         float: left;
         a{display: block; width: 200px; height: 40px;margin-top: 15px; line-height: 80px;     
         }
     }
     .dep1{
-        float: right;
-        >li{float: left; line-height: 80px;
-        +li{margin-left: 80px;}
+        float: right; text-align: center; 
+        >li{float: left; line-height: 80px; position: relative; height: 80px; width: 130px;
+            >a{
+                &::after{content: ""; position: absolute; bottom: 0px; left: 0; width: 0; height: 3px; background: $beige;} }
+            >a:hover,>a:focus{
+                &::after{content: ""; position: absolute; bottom: 0px; left: 0; width: 100%; height: 3px; background: $beige; @include transition(width 0.5s);}}
         }
-    }
-    .dep2{display: none;}
+        .active{            
+            >a{
+                &::after{content: ""; position: absolute; bottom: 0px; left: 0; width: 100%; height: 3px; background: $beige; @include transition(width 0.5s);}}}
+    .dep2{
+        li{width: 130px; text-align: center;font-size: 15px;
+            a{position: relative;
+                &:hover,&:focus{color: $dark_wine; border-bottom: 1px solid $dark_wine;}            
+            +li{padding-top: -25px;}}}}
 }
-#mHeader{
-    display: none;}
+#pcGnb{padding: 0 300px; }
+#pcGnb.on{background: #fff;height: 400px;
+    @include transition(all 0.3s); 
+    &::after{content: ""; position: absolute; top: 80px; left: 0; width: 100%; height: 1px; background: $beige;}}}
+#mHeader{display: none;}
+
 //m헤더
 @media screen and (max-width: 1439px) {
     #pcHeader{display: none;}
     #mHeader{
-        display: block;position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; }
+        display: block; position: fixed; top: 0; left: 0; z-index: 10001; width: 100%;
+        .on_top{
+            .line{position: absolute;}
+            // 햄버거
+            .btn_menu{position: absolute;
+                top: 4.1667vw; right: 8.3333vw; width: 20px; height: 5.8333vw; overflow: hidden; z-index: 1100; 
+                .line{width: 100%;height: 1px;background: #ffffff;left: 0;}
+                .top{top: 0.0000vw;}
+                .mid{top: 8px;}
+                .btm{top: 16px;}  
+            }
+            .btn_menu.open{      
+                .line{background:#fff !important;height: 1px;}
+                .top{@include transform(rotate(45deg)); @include transition(all 0.5s); top: 6px; width: 5px; left: 16px;}
+                .mid{}
+                .btm{@include transform(rotate(-45deg)); @include transition(all 0.5s); top: 10px; width: 5px; left: 16px;}    
+            }    
+        .logo{width: 30px; height: 35px; margin-top: 10px; margin-left: 15px;
+        }
+        }
+        .mgnb_wrap{
+            position: fixed; top: 0; right: -100%; display: none; 
+            width: 100%; height: 100%; padding: 0 30px; background: $pink; color: #fff;
+        .dep1{font-family: Cinzel; font-size: 20px; padding: 0 50px;
+            >li{margin-top: 100px; position: relative; 
+            >a{  
+                &::after{content: ""; display: inline-block; background-image: url("../images/common/m_nav_arrow.svg"); width: 5.5556vw; height: 5.5556vw;position: absolute; top: 0; right: -15px;}}
+            &.on{
+            a::after{@include transform (rotate(180deg)); @include transition(all 0.4s);}}
+            &:nth-child(2){>a{&::after{background: none;}}}}
+        .dep2{font-family: NtSansKR; font-size: 15px; padding: 0 30px; padding-top: 50px;
+            li{
+                a{}
+                +li{margin-top: 40px;}
+            }
+            }
+    }}
+    }
 }
 // 푸터
-footer{background: #c99789; color: #fff; padding: 0 300px; font-size: 15px; height: 150px;
-ul{
-    li{display: inline-block;}
-}}
+footer{background: $pink; color: #fff; padding: 0 14.141414141vw; font-size: 0.757575758vw; width: 100vw; height: 7.575757576vw; float: left; margin-top: 4.040404040vw;
+    img{width: 9.090909091vw; height: 1.515151515vw; margin-top: 3.030303030vw;}
+    p{display: inline-block; line-height: 7.575757576vw; margin-left: 2.777777778vw;}
+    ul{display: inline-block; margin-left: 20.202020202vw;
+        li{display: inline-block;
+        +li{margin-left: 3.535353535vw;}}
+    }
+}
+//m푸터
+@media screen and (max-width: 1439px) {
+    footer{height: 34.38rem; padding: 0 3.125rem; position: relative; margin-top: 0;
+    img{margin-top: 35%; width: 11.25rem; height: 1.875rem;}
+    p{margin-left: 0; font-size: 0.8125rem; position: absolute; bottom: 20%; left: 3.125rem;}
+    ul{margin-left: 0; margin-top: 4.375rem;
+        li{display: block; font-size: 0.8125rem; margin-top: 1.75rem;
+            +li{margin-left: 0;}
+        }
+    }
+    }
+}

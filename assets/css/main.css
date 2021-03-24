@@ -2,9 +2,6 @@
   overflow-x: hidden;
   overflow-y: hidden; }
 
-#cnt_wrap > section {
-  background: #fff; }
-
 #cnt1 {
   width: 100%;
   height: 100vh;
@@ -20,129 +17,370 @@
     background-image: url("../images/main/main_bg.png"); }
     #cnt1 .main_first > img {
       display: inline-block;
-      width: 1000px;
-      margin-top: 400px; }
+      width: 50.505050505vw;
+      margin-top: 20em; }
     #cnt1 .main_first span img {
-      width: 50px;
-      height: 80px;
+      width: 2.525252525vw;
+      height: 4.040404040vw;
       position: absolute;
-      bottom: 30px;
-      left: calc(50% - 25px); }
+      bottom: 2em;
+      left: calc(50% - 1.262626263vw); }
 
-#cnt2 h2 {
-  font-family: Cinzel;
-  color: #482428;
-  font-size: 40px;
-  margin-top: 100px;
-  text-align: center;
-  position: relative; }
-  #cnt2 h2::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background: #FCE9DB;
-    position: absolute;
-    bottom: 50px;
-    right: 700px;
-    border-radius: 50%; }
-  #cnt2 h2::after {
-    content: "";
-    width: 27px;
-    height: 27px;
-    background: #C99789;
-    position: absolute;
-    top: 0;
-    right: 650px;
-    border-radius: 50%; }
-#cnt2 .service_list {
-  margin-top: 100px; }
-  #cnt2 .service_list ul {
-    width: 1840px;
-    height: 400px;
-    border-radius: 85px;
-    padding: 100px 240px;
-    margin-left: 30px; }
-    #cnt2 .service_list ul .service_title {
-      font-family: Cinzel;
-      font-size: 25px;
-      position: relative;
-      display: inline-block; }
-      #cnt2 .service_list ul .service_title::after {
-        content: "";
-        position: absolute;
-        top: 100px;
-        left: 0;
-        background: #000;
-        width: 1050px;
-        height: 1px; }
-    #cnt2 .service_list ul .service_go {
-      display: inline-block;
-      width: 110px;
-      height: 40px;
-      font-size: 15px;
-      margin-left: 30px; }
-      #cnt2 .service_list ul .service_go a {
-        width: 110px;
-        height: 40px;
+#cnt2 {
+  margin-top: 10.101010101vw; }
+  #cnt2 h2 {
+    font-family: Cinzel;
+    color: #482428;
+    font-size: 2.020202020vw;
+    margin-top: 5.050505051vw;
+    text-align: center;
+    position: relative; }
+    #cnt2 h2::before {
+      content: "";
+      width: 2.525252525vw;
+      height: 2.525252525vw;
+      background: #FCE9DB;
+      position: absolute;
+      bottom: 2.525252525vw;
+      right: 35.353535354vw;
+      border-radius: 50%; }
+    #cnt2 h2::after {
+      content: "";
+      width: 1.363636364vw;
+      height: 1.363636364vw;
+      background: #C99789;
+      position: absolute;
+      top: 0;
+      right: 32.828282828vw;
+      border-radius: 50%; }
+  #cnt2 .service_list {
+    margin-top: 5.050505051vw; }
+    #cnt2 .service_list ul {
+      width: 92.929292929vw;
+      height: 20.202020202vw;
+      border-radius: 4.292929293vw;
+      padding: 5.050505051vw 12.121212121vw;
+      margin-left: 1.515151515vw; }
+      #cnt2 .service_list ul .service_title {
+        font-family: Cinzel;
+        font-size: 1.262626263vw;
+        position: relative;
+        display: inline-block; }
+        #cnt2 .service_list ul .service_title::after {
+          content: "";
+          position: absolute;
+          top: 5.050505051vw;
+          background: #000;
+          width: 53.030303030vw;
+          height: 0.050505051vw; }
+      #cnt2 .service_list ul .service_go {
         display: inline-block;
-        background-color: #fff;
-        border-radius: 20px;
-        line-height: 40px;
-        text-align: center; }
-    #cnt2 .service_list ul .service_txt {
-      font-size: 16px;
-      margin-top: 130px;
-      line-height: 1.5; }
-    #cnt2 .service_list ul .service_img {
-      position: relative; }
-      #cnt2 .service_list ul .service_img img {
-        border-radius: 50%;
-        position: absolute;
-        bottom: -25px;
-        right: 60px; }
-      #cnt2 .service_list ul .service_img::before {
-        content: "";
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        bottom: 0;
-        border-radius: 50%; }
-    #cnt2 .service_list ul + ul {
-      margin-top: 100px; }
-  #cnt2 .service_list .service_1 {
-    background-color: rgba(248, 234, 225, 0.5); }
-    #cnt2 .service_list .service_1 .service_img::before {
-      right: -25px;
-      background: #f8eae1; }
-  #cnt2 .service_list .service_2 {
-    background-color: rgba(207, 164, 145, 0.5); }
-    #cnt2 .service_list .service_2 .service_img::before {
-      right: 100px;
-      background: #cfa491; }
-  #cnt2 .service_list .service_3 {
-    background-color: rgba(193, 166, 145, 0.5); }
-    #cnt2 .service_list .service_3 .service_img::before {
-      right: -25px;
-      background: #c1a691; }
+        width: 5.555555556vw;
+        height: 2.020202020vw;
+        font-size: 0.757575758vw;
+        margin-left: 1.515151515vw; }
+        #cnt2 .service_list ul .service_go a {
+          width: 5.555555556vw;
+          height: 2.020202020vw;
+          display: inline-block;
+          background-color: #fff;
+          border-radius: 1.010101010vw;
+          line-height: 2.020202020vw;
+          text-align: center; }
+      #cnt2 .service_list ul .service_txt {
+        font-size: 0.808080808vw;
+        margin-top: 6.565656566vw;
+        line-height: 1.5; }
+      #cnt2 .service_list ul .service_img {
+        position: relative; }
+        #cnt2 .service_list ul .service_img img {
+          border-radius: 50%;
+          position: absolute;
+          bottom: -1.262626263vw;
+          right: 3.030303030vw;
+          box-shadow: 0.404040404vw 0.505050505vw 2.525252525vw 0 rgba(0, 0, 0, 0.25); }
+        #cnt2 .service_list ul .service_img::before {
+          content: "";
+          width: 12.626262626vw;
+          height: 12.626262626vw;
+          position: absolute;
+          bottom: 0;
+          border-radius: 50%; }
+      #cnt2 .service_list ul + ul {
+        margin-top: 5.050505051vw; }
+    #cnt2 .service_list .service_1 {
+      background-color: rgba(248, 234, 225, 0.5); }
+      #cnt2 .service_list .service_1 .service_title::after {
+        left: 0; }
+      #cnt2 .service_list .service_1 .service_img::before {
+        right: -1.262626263vw;
+        background: #f8eae1; }
+    #cnt2 .service_list .service_2 {
+      background-color: rgba(207, 164, 145, 0.5);
+      text-align: right; }
+      #cnt2 .service_list .service_2 .service_title::after {
+        right: -7.575757576vw; }
+      #cnt2 .service_list .service_2 .service_img img {
+        left: 3.030303030vw; }
+      #cnt2 .service_list .service_2 .service_img::before {
+        left: 0.505050505vw;
+        background: #cfa491; }
+    #cnt2 .service_list .service_3 {
+      background-color: rgba(193, 166, 145, 0.5); }
+      #cnt2 .service_list .service_3 .service_title::after {
+        left: 0; }
+      #cnt2 .service_list .service_3 .service_img::before {
+        right: -1.262626263vw;
+        background: #c1a691; }
+      #cnt2 .service_list .service_3 .pc_br {
+        display: block; }
 
 #cnt3 {
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin-top: 7.575757576vw; }
+  #cnt3 span img {
+    width: 50rem; }
+  #cnt3 .tec_logo img {
+    width: 15.151515152vw;
+    height: 2.525252525vw;
+    margin-top: 10.101010101vw; }
   #cnt3 .bg_logo img {
-    width: 1000px;
-    height: 1000px;
+    width: 50rem;
+    height: 50rem;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1; }
   #cnt3 .bg_tec {
     font-family: Cinzel;
-    font-size: 200px;
+    font-size: 8.585858586vw;
     color: rgba(193, 166, 145, 0.15);
     position: absolute;
-    top: 0;
+    top: 32.575757576vw;
     right: 0; }
-  #cnt3 p {
-    margin-top: 50px; }
+  #cnt3 > p {
+    margin-top: 7.575757576vw;
+    line-height: 2.525252525vw; }
+  #cnt3 .tec_list {
+    margin-top: 15.151515152vw;
+    display: inline-block; }
+    #cnt3 .tec_list li {
+      float: left;
+      width: 15.151515152vw; }
+      #cnt3 .tec_list li p {
+        color: #482428;
+        margin-top: 2.272727273vw;
+        font-size: 0.909090909vw; }
+      #cnt3 .tec_list li + li {
+        margin-left: 5.707070707vw; }
+
+#cnt4 {
+  width: 100vw;
+  background: rgba(252, 233, 219, 0.5);
+  margin-top: 10.101010101vw;
+  padding: 0 10%; }
+  #cnt4 .contact_left {
+    display: inline-block;
+    width: 26.262626263vw; }
+    #cnt4 .contact_left h2 {
+      font-family: Cinzel;
+      font-size: 2.525252525vw;
+      padding-top: 9.090909091vw;
+      padding-bottom: 6.060606061vw;
+      color: #482428; }
+    #cnt4 .contact_left ul {
+      color: #5E5E5E; }
+      #cnt4 .contact_left ul li {
+        font-size: 0.858585859vw; }
+        #cnt4 .contact_left ul li + li {
+          margin-top: 1.515151515vw; }
+    #cnt4 .contact_left a {
+      display: block;
+      margin-top: 6.060606061vw;
+      border: 0.050505051vw solid #000;
+      border-radius: 0.505050505vw;
+      width: 19.444444444vw;
+      height: 3.535353535vw;
+      line-height: 3.535353535vw;
+      background: #fff;
+      padding: 0 2.525252525vw;
+      position: relative; }
+      #cnt4 .contact_left a > img {
+        width: 8px;
+        height: 15px;
+        position: absolute;
+        top: 1.414141414vw;
+        right: 1.767676768vw; }
+      #cnt4 .contact_left a:hover, #cnt4 .contact_left a:focus {
+        background: #C1A691;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+  #cnt4 img {
+    width: 49.494949495vw;
+    height: auto; }
+
+@media screen and (max-width: 1439px) {
+  #cnt1 .main_first {
+    position: relative; }
+    #cnt1 .main_first > img {
+      width: 20rem;
+      margin-top: 25rem; }
+    #cnt1 .main_first span img {
+      width: 2.188rem;
+      height: 3.125rem;
+      bottom: 3.125rem;
+      left: calc(50% - 1.094rem); }
+    #cnt1 .main_first::after {
+      content: "";
+      display: block;
+      background: #fff;
+      width: 100%;
+      height: 0.0625rem;
+      position: absolute;
+      top: 3.125rem;
+      left: 0; }
+
+  #cnt2 {
+    margin-top: 4.375rem; }
+    #cnt2 h2 {
+      font-size: 1.5rem; }
+      #cnt2 h2::before {
+        width: 1.5rem;
+        height: 1.5rem;
+        bottom: 1.75rem;
+        right: 3.75rem; }
+      #cnt2 h2::after {
+        width: 1rem;
+        height: 1rem;
+        right: 2.5rem; }
+    #cnt2 .service_list {
+      margin-top: 3.125rem; }
+      #cnt2 .service_list ul {
+        width: 90%;
+        height: 43.75rem;
+        border-radius: 3.125rem;
+        margin-left: 5%;
+        padding: 0;
+        position: relative; }
+        #cnt2 .service_list ul .service_title {
+          font-size: 1.313rem;
+          margin-top: 21.88rem;
+          text-align: center;
+          width: 100%; }
+          #cnt2 .service_list ul .service_title::after {
+            width: 15.63rem;
+            top: 4.375rem; }
+        #cnt2 .service_list ul .service_img::before {
+          position: static; }
+        #cnt2 .service_list ul .service_go a {
+          position: absolute;
+          bottom: 5%;
+          left: calc(50% - 3.438rem);
+          width: 6.875rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          border-radius: 1.25rem;
+          font-size: 0.8125rem;
+          text-align: center; }
+        #cnt2 .service_list ul .service_txt {
+          word-break: keep-all;
+          text-align: center;
+          margin-top: 4.688rem;
+          font-size: 0.9375rem;
+          color: #482428;
+          padding: 0 17%;
+          line-height: 1.563rem; }
+      #cnt2 .service_list .service_1 .service_title::after {
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_1 .service_img img {
+        bottom: 17.5rem;
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_2 .service_title::after {
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_2 .service_img img {
+        bottom: 17.5rem;
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_3 .service_title::after {
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_3 .service_img img {
+        bottom: 15.5rem;
+        left: calc(50% - 7.813rem); }
+      #cnt2 .service_list .service_3 span {
+        display: block; }
+
+  #cnt3 {
+    margin-top: 4.375rem;
+    padding: 0 10%; }
+    #cnt3 .tec_logo img {
+      width: 13.13rem;
+      height: 2.188rem; }
+    #cnt3 .bg_logo img {
+      display: none; }
+    #cnt3 .bg_tec {
+      font-size: 150px;
+      writing-mode: vertical-rl;
+      top: -2.5rem;
+      z-index: -1; }
+    #cnt3 > p {
+      margin-top: 4.063rem;
+      font-size: 0.9375rem;
+      line-height: 1.438rem;
+      word-break: keep-all; }
+    #cnt3 .tec_list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      #cnt3 .tec_list li {
+        width: 9.063rem;
+        height: 15.63rem; }
+        #cnt3 .tec_list li p {
+          font-size: 0.8125rem; }
+        #cnt3 .tec_list li + li {
+          margin-left: 0; }
+        #cnt3 .tec_list li:nth-child(even) {
+          margin-left: 0.625rem; }
+        #cnt3 .tec_list li span {
+          display: block;
+          margin-top: 0.3125rem; }
+
+  #cnt4 {
+    position: relative;
+    height: 100vh;
+    margin-top: 7.5rem; }
+    #cnt4 .contact_left {
+      width: 100%;
+      text-align: center; }
+      #cnt4 .contact_left h2 {
+        font-size: 1.563rem;
+        padding-top: 5rem; }
+      #cnt4 .contact_left ul {
+        margin-top: 25rem;
+        text-align: left; }
+        #cnt4 .contact_left ul li {
+          font-size: 0.9375rem;
+          letter-spacing: -0.9px; }
+          #cnt4 .contact_left ul li + li {
+            margin-top: 1.25rem; }
+      #cnt4 .contact_left a {
+        width: 70%;
+        height: 2.813rem;
+        font-size: 0.8125rem;
+        line-height: 2.688rem;
+        padding: 0 1.875rem;
+        border-radius: 0.625rem;
+        margin-top: 3.75rem;
+        margin-left: 15%;
+        text-align: left; }
+        #cnt4 .contact_left a img {
+          top: calc(50% - 0.4375rem);
+          right: 1.875rem; }
+    #cnt4 > img {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
