@@ -87,6 +87,12 @@
           border-radius: 1.010101010vw;
           line-height: 2.020202020vw;
           text-align: center; }
+          #cnt2 .service_list ul .service_go a:hover, #cnt2 .service_list ul .service_go a:focus {
+            background-color: #C1A691;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
       #cnt2 .service_list ul .service_txt {
         font-size: 0.808080808vw;
         margin-top: 6.565656566vw;
@@ -380,7 +386,9 @@
         text-align: left; }
         #cnt4 .contact_left a img {
           top: calc(50% - 0.4375rem);
-          right: 1.875rem; }
+          right: 1.875rem;
+          width: 0.375rem;
+          height: 0.9375rem; }
     #cnt4 > img {
       position: absolute;
       top: 20%;

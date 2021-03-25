@@ -27,7 +27,7 @@ $(document).ready(function () {
                 $(this).css({
                         display: 'none'
                     })
-                    .find('li.on').removeClass('on').children('ul').stop().slideup();
+                    .find('li.on').removeClass('on').children('ul').stop().slideUp();
             });
             $(this).removeClass('open').find('blind-b').text('메뉴 열기');
         } else {
