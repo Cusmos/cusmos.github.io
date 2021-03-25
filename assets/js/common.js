@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // pc nav
+    //pc nav
     var _pcGnb = $('#pcGnb > ul');
     _pcGnb.children().find('div').hide();
     _pcGnb.on('mouseenter focusin', function () {
@@ -16,10 +16,8 @@ $(document).ready(function () {
             $(this).parent().removeClass('active');
         });
     });
-
-    // m nav
+    //m nav
     var _mGnb = $('#mHeader .mgnb_wrap');
-
     _mGnb.find('.dep2').hide();
     $('#mHeader .on_top .btn_menu').on('click', function () {
         if ($(this).hasClass('open')) {
@@ -67,6 +65,20 @@ $(document).ready(function () {
             }
             return false;
         });
+    });
+    //m nav bg추가
+    var timer = 0;
+    $(window).on('scroll', function () {
+        var scrollT = $(this).scrollTop();
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          scrollT = $(this).scrollTop();
+        if (scrollT > 300){
+            $('#mHeader').addClass('bg_change');
+        }else{
+            $('#mHeader').removeClass('bg_change');
+        }
+        }, 50);
     });
 });
 
