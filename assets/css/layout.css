@@ -84,7 +84,7 @@
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    #pcHeader #pcGnb.on::after {
+    #pcHeader #pcGnb.on::before {
       content: "";
       position: absolute;
       top: 4.040404040vw;
@@ -197,14 +197,16 @@ footer {
       height: 100%;
       padding: 0 1.875rem;
       background: #C99789;
-      color: #fff; }
+      color: #fff;
+      overflow: auto; }
       #mHeader .mgnb_wrap .dep1 {
         font-family: Cinzel;
         font-size: 1.25rem;
-        padding: 0 1.875rem; }
+        padding: 6.25rem 1.875rem; }
         #mHeader .mgnb_wrap .dep1 > li {
-          margin-top: 6.25rem;
           position: relative; }
+          #mHeader .mgnb_wrap .dep1 > li + li {
+            margin-top: 6.25rem; }
           #mHeader .mgnb_wrap .dep1 > li > a::after {
             content: "";
             display: inline-block;
