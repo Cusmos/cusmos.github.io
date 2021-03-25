@@ -18,7 +18,7 @@
     #cnt1 .main_first > img {
       display: inline-block;
       width: 50.505050505vw;
-      margin-top: 20em; }
+      margin-top: 25rem; }
     #cnt1 .main_first span img {
       width: 2.525252525vw;
       height: 4.040404040vw;
@@ -56,11 +56,11 @@
   #cnt2 .service_list {
     margin-top: 5.050505051vw; }
     #cnt2 .service_list ul {
-      width: 92.929292929vw;
+      width: 90%;
       height: 20.202020202vw;
       border-radius: 4.292929293vw;
       padding: 5.050505051vw 12.121212121vw;
-      margin-left: 1.515151515vw; }
+      margin-left: 5%; }
       #cnt2 .service_list ul .service_title {
         font-family: Cinzel;
         font-size: 1.262626263vw;
@@ -98,7 +98,8 @@
           position: absolute;
           bottom: -1.262626263vw;
           right: 3.030303030vw;
-          box-shadow: 0.404040404vw 0.505050505vw 2.525252525vw 0 rgba(0, 0, 0, 0.25); }
+          box-shadow: 0.404040404vw 0.505050505vw 2.525252525vw 0 rgba(0, 0, 0, 0.25);
+          width: 12.626262626vw; }
         #cnt2 .service_list ul .service_img::before {
           content: "";
           width: 12.626262626vw;
@@ -207,8 +208,8 @@
       padding: 0 2.525252525vw;
       position: relative; }
       #cnt4 .contact_left a > img {
-        width: 8px;
-        height: 15px;
+        width: 0.404040404vw;
+        height: 0.757575758vw;
         position: absolute;
         top: 1.414141414vw;
         right: 1.767676768vw; }
@@ -222,12 +223,12 @@
     width: 49.494949495vw;
     height: auto; }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1023px) {
   #cnt1 .main_first {
     position: relative; }
     #cnt1 .main_first > img {
       width: 20rem;
-      margin-top: 25rem; }
+      margin-top: 80%; }
     #cnt1 .main_first span img {
       width: 2.188rem;
       height: 3.125rem;
@@ -273,6 +274,8 @@
           #cnt2 .service_list ul .service_title::after {
             width: 15.63rem;
             top: 4.375rem; }
+        #cnt2 .service_list ul .service_img img {
+          width: 15.63rem; }
         #cnt2 .service_list ul .service_img::before {
           position: static; }
         #cnt2 .service_list ul .service_go a {
@@ -332,23 +335,24 @@
     #cnt3 .tec_list {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: space-between; }
       #cnt3 .tec_list li {
-        width: 9.063rem;
+        width: 46%;
         height: 15.63rem; }
         #cnt3 .tec_list li p {
           font-size: 0.8125rem; }
         #cnt3 .tec_list li + li {
           margin-left: 0; }
         #cnt3 .tec_list li:nth-child(even) {
-          margin-left: 0.625rem; }
+          margin-left: 5%; }
         #cnt3 .tec_list li span {
           display: block;
           margin-top: 0.3125rem; }
 
   #cnt4 {
     position: relative;
-    height: 100vh;
+    height: 50.88rem;
     margin-top: 7.5rem; }
     #cnt4 .contact_left {
       width: 100%;
