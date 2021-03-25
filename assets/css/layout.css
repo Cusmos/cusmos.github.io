@@ -11,42 +11,42 @@
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 15px;
+  height: 4.040404040vw;
+  font-size: 0.757575758vw;
   background: #fff;
-  height: 80px;
   color: #5E5E5E; }
   #pcHeader .logo {
     float: left; }
     #pcHeader .logo a {
       display: block;
-      width: 200px;
-      height: 40px;
-      margin-top: 15px;
-      line-height: 80px; }
+      width: 10.101010101vw;
+      height: 2.020202020vw;
+      margin-top: 0.757575758vw;
+      line-height: 4.040404040vw; }
   #pcHeader .dep1 {
     float: right;
     text-align: center; }
     #pcHeader .dep1 > li {
-      float: left;
-      line-height: 80px;
       position: relative;
-      height: 80px;
-      width: 130px; }
+      width: 6.565656566vw;
+      height: 4.040404040vw;
+      line-height: 4.040404040vw;
+      float: left; }
       #pcHeader .dep1 > li > a::after {
         content: "";
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         width: 0;
-        height: 3px;
+        height: 0.151515152vw;
         background: #FCE9DB; }
       #pcHeader .dep1 > li > a:hover::after, #pcHeader .dep1 > li > a:focus::after {
         content: "";
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         width: 100%;
-        height: 3px;
+        height: 0.151515152vw;
         background: #FCE9DB;
         -webkit-transition: width 0.5s;
         -moz-transition: width 0.5s;
@@ -55,31 +55,31 @@
     #pcHeader .dep1 .active > a::after {
       content: "";
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       left: 0;
       width: 100%;
-      height: 3px;
+      height: 0.151515152vw;
       background: #FCE9DB;
       -webkit-transition: width 0.5s;
       -moz-transition: width 0.5s;
       -o-transition: width 0.5s;
       transition: width 0.5s; }
     #pcHeader .dep1 .dep2 li {
-      width: 130px;
-      text-align: center;
-      font-size: 15px; }
+      width: 6.565656566vw;
+      font-size: 0.757575758vw;
+      text-align: center; }
       #pcHeader .dep1 .dep2 li a {
         position: relative; }
         #pcHeader .dep1 .dep2 li a:hover, #pcHeader .dep1 .dep2 li a:focus {
           color: #482428;
-          border-bottom: 1px solid #482428; }
+          border-bottom: 0.0625rem solid #482428; }
         #pcHeader .dep1 .dep2 li a + li {
-          padding-top: -25px; }
+          padding-top: -1.262626263vw; }
   #pcHeader #pcGnb {
-    padding: 0 300px; }
+    padding: 0 15.151515152vw; }
   #pcHeader #pcGnb.on {
     background: #fff;
-    height: 400px;
+    height: 20.202020202vw;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -87,126 +87,15 @@
     #pcHeader #pcGnb.on::after {
       content: "";
       position: absolute;
-      top: 80px;
+      top: 4.040404040vw;
       left: 0;
       width: 100%;
-      height: 1px;
+      height: 0.050505051vw;
       background: #FCE9DB; }
 
 #mHeader {
   display: none; }
 
-@media screen and (max-width: 1439px) {
-  #pcHeader {
-    display: none; }
-
-  #mHeader {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10001;
-    width: 100%; }
-    #mHeader .on_top .line {
-      position: absolute; }
-    #mHeader .on_top .btn_menu {
-      position: absolute;
-      top: 4.1667vw;
-      right: 8.3333vw;
-      width: 20px;
-      height: 5.8333vw;
-      overflow: hidden;
-      z-index: 1100; }
-      #mHeader .on_top .btn_menu .line {
-        width: 100%;
-        height: 1px;
-        background: #ffffff;
-        left: 0; }
-      #mHeader .on_top .btn_menu .top {
-        top: 0.0000vw; }
-      #mHeader .on_top .btn_menu .mid {
-        top: 8px; }
-      #mHeader .on_top .btn_menu .btm {
-        top: 16px; }
-    #mHeader .on_top .btn_menu.open .line {
-      background: #fff !important;
-      height: 1px; }
-    #mHeader .on_top .btn_menu.open .top {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      top: 6px;
-      width: 5px;
-      left: 16px; }
-    #mHeader .on_top .btn_menu.open .btm {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      top: 10px;
-      width: 5px;
-      left: 16px; }
-    #mHeader .on_top .logo {
-      width: 30px;
-      height: 35px;
-      margin-top: 10px;
-      margin-left: 15px; }
-    #mHeader .mgnb_wrap {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      display: none;
-      width: 100%;
-      height: 100%;
-      padding: 0 30px;
-      background: #C99789;
-      color: #fff; }
-      #mHeader .mgnb_wrap .dep1 {
-        font-family: Cinzel;
-        font-size: 20px;
-        padding: 0 50px; }
-        #mHeader .mgnb_wrap .dep1 > li {
-          margin-top: 100px;
-          position: relative; }
-          #mHeader .mgnb_wrap .dep1 > li > a::after {
-            content: "";
-            display: inline-block;
-            background-image: url("../images/common/m_nav_arrow.svg");
-            width: 5.5556vw;
-            height: 5.5556vw;
-            position: absolute;
-            top: 0;
-            right: -15px; }
-          #mHeader .mgnb_wrap .dep1 > li.on a::after {
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            -o-transition: all 0.4s;
-            transition: all 0.4s; }
-          #mHeader .mgnb_wrap .dep1 > li:nth-child(2) > a::after {
-            background: none; }
-        #mHeader .mgnb_wrap .dep1 .dep2 {
-          font-family: NtSansKR;
-          font-size: 15px;
-          padding: 0 30px;
-          padding-top: 50px; }
-          #mHeader .mgnb_wrap .dep1 .dep2 li + li {
-            margin-top: 40px; } }
 footer {
   background: #C99789;
   color: #fff;
@@ -232,7 +121,122 @@ footer {
       footer ul li + li {
         margin-left: 3.535353535vw; }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1023px) {
+  #pcHeader {
+    display: none; }
+
+  #mHeader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 3.063rem; }
+    #mHeader .on_top .line {
+      position: absolute; }
+    #mHeader .on_top .btn_menu {
+      position: absolute;
+      top: 1.125rem;
+      right: 1.25rem;
+      width: 1.25rem;
+      height: 1.313rem;
+      overflow: hidden;
+      z-index: 1100; }
+      #mHeader .on_top .btn_menu .line {
+        width: 100%;
+        height: 0.0625rem;
+        background: #ffffff;
+        left: 0; }
+      #mHeader .on_top .btn_menu .top {
+        top: 0; }
+      #mHeader .on_top .btn_menu .mid {
+        top: 0.5rem; }
+      #mHeader .on_top .btn_menu .btm {
+        top: 1rem; }
+    #mHeader .on_top .btn_menu.open .line {
+      background: #fff !important;
+      height: 0.0625rem; }
+    #mHeader .on_top .btn_menu.open .top {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      top: 0.375rem;
+      width: 0.3125rem;
+      left: 1rem; }
+    #mHeader .on_top .btn_menu.open .btm {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      top: 0.625rem;
+      width: 0.25rem;
+      left: 1rem; }
+    #mHeader .on_top .logo {
+      width: 1.875rem;
+      height: 2.188rem;
+      margin-top: 0.625rem;
+      margin-left: 0.9375rem; }
+    #mHeader .mgnb_wrap {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 0 1.875rem;
+      background: #C99789;
+      color: #fff; }
+      #mHeader .mgnb_wrap .dep1 {
+        font-family: Cinzel;
+        font-size: 1.25rem;
+        padding: 0 1.875rem; }
+        #mHeader .mgnb_wrap .dep1 > li {
+          margin-top: 6.25rem;
+          position: relative; }
+          #mHeader .mgnb_wrap .dep1 > li > a::after {
+            content: "";
+            display: inline-block;
+            background-image: url("../images/common/m_nav_arrow.svg");
+            width: 5.5556vw;
+            height: 5.5556vw;
+            position: absolute;
+            top: 0;
+            right: -0.9375rem; }
+          #mHeader .mgnb_wrap .dep1 > li.on a::after {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s; }
+          #mHeader .mgnb_wrap .dep1 > li:nth-child(2) > a::after {
+            background: none; }
+        #mHeader .mgnb_wrap .dep1 .dep2 {
+          font-family: NtSansKR;
+          font-size: 0.9375rem;
+          padding: 0 1.875rem;
+          padding-top: 3.125rem; }
+          #mHeader .mgnb_wrap .dep1 .dep2 li + li {
+            margin-top: 2.5rem; }
+
+  #mHeader.bg_change {
+    background: #C99789; }
+
   footer {
     height: 34.38rem;
     padding: 0 3.125rem;
